@@ -1,0 +1,4103 @@
+这是测试文本xxxxxxxxjjjjjjjjhnvhnvnLast login: Sun Jan 13 22:01:54 on ttys000
+sc:~ bigbird$ cd www/
+sc:www bigbird$ ls
+electron-api-demos-Zh_CN-master	web
+gy				学生项目
+picquery
+sc:www bigbird$ cd web/
+sc:web bigbird$ ls
+dh3		muchang		picquery	xuesheng
+dianshang	my-project	skip		登录页面
+jQueryMagnifier	picbook.sql	textweb
+sc:web bigbird$ cd textweb/
+sc:textweb bigbird$ ls
+textNode	textvue
+sc:textweb bigbird$ cd textNode/
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+^C
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET /sockjs-node/info?t=1547388406934 404 258.826 ms - 1205
+POST /users/adminlogin 200 104.386 ms - 12
+POST /users/adminlogin 200 4.950 ms - 12
+POST /users/adminlogin 200 3.223 ms - 12
+POST /users/adminlogin 200 2.854 ms - 12
+POST /users/adminlogin 200 2.683 ms - 12
+POST /users/adminlogin 200 3.163 ms - 12
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path:
+      '/var/folders/xz/n4l16tcx6ysf4q273byvkryw0000gp/T/upload_9ca7e86976913a4bab10bb4e49bfb31c',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:12:40.709Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path:
+         '/var/folders/xz/n4l16tcx6ysf4q273byvkryw0000gp/T/upload_9ca7e86976913a4bab10bb4e49bfb31c',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '/my/dir/upload_1ce421f5346fb48df468ce61e739eb1d'
+Emitted 'error' event at:
+    at lazyFs.open (internal/fs/streams.js:273:12)
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '/my/dir/upload_3ae5eee7f784826ea8abdb28b88fb40c'
+Emitted 'error' event at:
+    at lazyFs.open (internal/fs/streams.js:273:12)
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open 'uploads/upload_87e64208668e75af77507442d360f6a5'
+Emitted 'error' event at:
+    at lazyFs.open (internal/fs/streams.js:273:12)
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:20
+            var extname = path.extname(files.tupian.name);
+                                                    ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:20:53
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+    at finishMaybe (_stream_writable.js:641:14)
+    at stream._final (_stream_writable.js:619:5)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_4491ea78e274c76f8ddc3869edb5abf3',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:42:04.891Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_4491ea78e274c76f8ddc3869edb5abf3',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:18
+            var extname = path.extname(files.tupian.name);
+                                                    ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:18:53
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+    at finishMaybe (_stream_writable.js:641:14)
+    at stream._final (_stream_writable.js:619:5)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_5e972ad50c3a64c6674b7a711908cb94',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:42:50.068Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_5e972ad50c3a64c6674b7a711908cb94',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+path.js:39
+    throw new ERR_INVALID_ARG_TYPE('path', 'string', path);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:1373:5)
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:18:32
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_2ded3827ae8a8f0ad66fe67c0d59ca5e',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:44:34.262Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_2ded3827ae8a8f0ad66fe67c0d59ca5e',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+path.js:39
+    throw new ERR_INVALID_ARG_TYPE('path', 'string', path);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:1373:5)
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:18:32
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_e69a2d6ad49db9a651f417bcf03537d4',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:46:08.342Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_e69a2d6ad49db9a651f417bcf03537d4',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+undefined
+path.js:39
+    throw new ERR_INVALID_ARG_TYPE('path', 'string', path);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:1373:5)
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:19:32
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_f0d759ff9dafee7eeecee1e13e71fd62',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:46:39.538Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_f0d759ff9dafee7eeecee1e13e71fd62',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:16
+	        console.log(files.File.name);
+	                               ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:16:33
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+    at finishMaybe (_stream_writable.js:641:14)
+    at stream._final (_stream_writable.js:619:5)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_59b65c8d3bf1eaff153c86c057803eca',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:47:27.772Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_59b65c8d3bf1eaff153c86c057803eca',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+undefined
+path.js:39
+    throw new ERR_INVALID_ARG_TYPE('path', 'string', path);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:1373:5)
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:19:32
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_0c8063670700ad5079341dc805fb3d49',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:49:16.607Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_0c8063670700ad5079341dc805fb3d49',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+File {
+  _events: {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  size: 18,
+  path: 'uploads/upload_0c8063670700ad5079341dc805fb3d49',
+  name: 'text.txt',
+  type: 'text/plain',
+  hash: null,
+  lastModifiedDate: 2019-01-13T14:49:16.607Z,
+  _writeStream:
+   WriteStream {
+     _writableState:
+      WritableState {
+        objectMode: false,
+        highWaterMark: 16384,
+        finalCalled: true,
+        needDrain: false,
+        ending: true,
+        ended: true,
+        finished: true,
+        destroyed: true,
+        decodeStrings: true,
+        defaultEncoding: 'utf8',
+        length: 0,
+        writing: false,
+        corked: 0,
+        sync: false,
+        bufferProcessing: false,
+        onwrite: [Function: bound onwrite],
+        writecb: null,
+        writelen: 0,
+        bufferedRequest: null,
+        lastBufferedRequest: null,
+        pendingcb: 0,
+        prefinished: true,
+        errorEmitted: false,
+        emitClose: false,
+        bufferedRequestCount: 0,
+        corkedRequestsFree: [Object] },
+     writable: false,
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     path: 'uploads/upload_0c8063670700ad5079341dc805fb3d49',
+     fd: null,
+     flags: 'w',
+     mode: 438,
+     start: undefined,
+     autoClose: true,
+     pos: undefined,
+     bytesWritten: 18,
+     closed: false } }
+path.js:39
+    throw new ERR_INVALID_ARG_TYPE('path', 'string', path);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:1373:5)
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:19:32
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_478e26b512d871b7b4887f54eed4ccf9',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:49:53.379Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_478e26b512d871b7b4887f54eed4ccf9',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:16
+	        console.log(files.uploadFile.File.name);
+	                                          ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:16:44
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+    at finishMaybe (_stream_writable.js:641:14)
+    at stream._final (_stream_writable.js:619:5)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_951f9a586f0c98354b545ffadb5d0551',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:50:15.344Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_951f9a586f0c98354b545ffadb5d0551',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+text.txt
+path.js:39
+    throw new ERR_INVALID_ARG_TYPE('path', 'string', path);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.extname (path.js:1373:5)
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:19:32
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_adc8a18c184aa43a9e9587f399c8dd97',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:51:43.406Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_adc8a18c184aa43a9e9587f399c8dd97',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:35
+            res.writeHead(200, {'content-type': 'text/plain'});
+            ^
+
+ReferenceError: res is not defined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:35:13
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:238:12
+    at WriteStream.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/file.js:79:5)
+    at Object.onceWrapper (events.js:273:13)
+    at WriteStream.emit (events.js:182:13)
+    at finishMaybe (_stream_writable.js:641:14)
+    at stream._final (_stream_writable.js:619:5)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_25eb4e89d04021fed8e1304c0d94033f',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:53:50.912Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_25eb4e89d04021fed8e1304c0d94033f',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:30
+                    throw  Error("改名失败");
+                    ^
+
+Error: 改名失败
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:30:28
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_1fd7ff26a8853bb89d80fcb8dd67fff4',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T14:54:37.251Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_1fd7ff26a8853bb89d80fcb8dd67fff4',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/text.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:30
+                    throw  Error("改名失败");
+                    ^
+
+Error: 改名失败
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:30:28
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_73e1a08e402f3372517e39009bdca1af',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:00:45.285Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_73e1a08e402f3372517e39009bdca1af',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_73e1a08e402f3372517e39009bdca1af.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:27
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_73e1a08e402f3372517e39009bdca1af.txt'
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_8c46e8c48707cf08919a28aaff8c366f',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:06:00.422Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_8c46e8c48707cf08919a28aaff8c366f',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_8c46e8c48707cf08919a28aaff8c366f.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:27
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_8c46e8c48707cf08919a28aaff8c366f'
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_a0b1473b3064623600c8a11d5a36ef4c',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:07:48.521Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_a0b1473b3064623600c8a11d5a36ef4c',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_a0b1473b3064623600c8a11d5a36ef4c.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:27
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open '../uploads/text123.txt'
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_2859476af9aa2a62cf6a3225b4943c3e',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:09:39.622Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_2859476af9aa2a62cf6a3225b4943c3e',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_2859476af9aa2a62cf6a3225b4943c3e.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:27
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open './text123.txt'
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_dec7e88f96ce22650abc05c4afc3eea0',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:09:49.190Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_dec7e88f96ce22650abc05c4afc3eea0',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_dec7e88f96ce22650abc05c4afc3eea0.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:27
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open './text123.txt'
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_e9243bad6949ff33fcee4de727530b51',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:10:52.661Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_e9243bad6949ff33fcee4de727530b51',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_e9243bad6949ff33fcee4de727530b51.txt
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:27
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open 'text123.txt'
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_1977767152c8c0459e389fded8f13f5d',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:17:16.345Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_1977767152c8c0459e389fded8f13f5d',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_1977767152c8c0459e389fded8f13f5d.txt
+utf-8:  测试文本消息
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_3e1eddbdc97772daf633397617f6badc',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:17:59.742Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_3e1eddbdc97772daf633397617f6badc',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_3e1eddbdc97772daf633397617f6badc.txt
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+{ uploadFile:
+   File {
+     _events: {},
+     _eventsCount: 0,
+     _maxListeners: undefined,
+     size: 18,
+     path: 'uploads/upload_77dbbc1e70261e7a2b30c0ea96e400f6',
+     name: 'text.txt',
+     type: 'text/plain',
+     hash: null,
+     lastModifiedDate: 2019-01-13T15:19:15.098Z,
+     _writeStream:
+      WriteStream {
+        _writableState: [WritableState],
+        writable: false,
+        _events: {},
+        _eventsCount: 0,
+        _maxListeners: undefined,
+        path: 'uploads/upload_77dbbc1e70261e7a2b30c0ea96e400f6',
+        fd: null,
+        flags: 'w',
+        mode: 438,
+        start: undefined,
+        autoClose: true,
+        pos: undefined,
+        bytesWritten: 18,
+        closed: false } } }
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_77dbbc1e70261e7a2b30c0ea96e400f6
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '../uploads/upload_3b399ce4af6db810d2a186e16a464cb7'
+Emitted 'error' event at:
+    at lazyFs.open (internal/fs/streams.js:273:12)
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:15
+	        var console.log(__dirname);
+	                   ^
+
+SyntaxError: Unexpected token .
+    at new Script (vm.js:79:7)
+    at createScript (vm.js:251:10)
+    at Object.runInThisContext (vm.js:303:10)
+    at Module._compile (internal/modules/cjs/loader.js:656:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Module.require (internal/modules/cjs/loader.js:636:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+/Users/bigbird/www/web/textweb/textNode/service
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_eb512ff1aa5fce7cf9cf2873e0db4909
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+/Users/bigbird/www/web/textweb/textNode/service
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_9bbcc0d996492f1158187fe666fd1b02
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+/Users/bigbird/www/web/textweb/textNode/serviceuploads
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/serviceuploads/upload_59df74875eab21e637e065ccbb322394'
+Emitted 'error' event at:
+    at lazyFs.open (internal/fs/streams.js:273:12)
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+/Users/bigbird/www/web/textweb/textNode/serviceuploads
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_8061078a4820e0a82aaf2b508cb972d4'
+Emitted 'error' event at:
+    at lazyFs.open (internal/fs/streams.js:273:12)
+    at FSReqWrap.oncomplete (fs.js:141:20)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+/Users/bigbird/www/web/textweb/textNode/serviceuploads
+/Users/bigbird/www/web/textweb/textNode/service
+/Users/bigbird/www/web/textweb/textNode/service//Users/bigbird/www/web/textweb/textNode/service/uploads/upload_dc341e93bee2d917299932b8d3a57c79
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+/Users/bigbird/www/web/textweb/textNode/serviceuploads
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:25
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/service//Users/bigbird/www/web/textweb/textNode/service/uploads/upload_e43c5bd0933fd79ed9de475cbc06dc08'
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+/Users/bigbird/www/web/textweb/textNode/serviceuploads
+/Users/bigbird/www/web/textweb/textNode/service//Users/bigbird/www/web/textweb/textNode/service/uploads/upload_406b34524de14e0eae23ee5be5914e9b
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:26
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/service//Users/bigbird/www/web/textweb/textNode/service/uploads/upload_406b34524de14e0eae23ee5be5914e9b'
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+/Users/bigbird/www/web/textweb/textNode/serviceuploads
+/Users/bigbird/www/web/textweb/textNode/service//Users/bigbird/www/web/textweb/textNode/service/uploads/upload_5240fa0c2bd4b518df4be7665e8d7498
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:26
+			        throw err;
+			        ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/service//Users/bigbird/www/web/textweb/textNode/service/uploads/upload_5240fa0c2bd4b518df4be7665e8d7498'
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_a0ccaeaeab92265e8620e9067f10ddbb
+utf-8:  测试文本消息
+POST /users/upfile - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+测试文本消息
+服务器出错：Error: ER_NO_DEFAULT_FOR_FIELD: Field 'id' doesn't have a default value
+POST /users/upfile - - ms - -
+测试文本消息
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: callback is not a function
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:29:10
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:83:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+测试文本消息
+POST /users/upfile 200 99.663 ms - 12
+POST /users/adminlogin 200 19.224 ms - 12
+POST /users/query_user_info 200 5.879 ms - 391
+测试文本消息
+POST /users/upfile 200 4.640 ms - 12
+测试文本消息
+POST /users/upfile 200 4.648 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+测试文本消息
+POST /users/upfile 200 102.075 ms - 12
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_f4f3ed7d6bdc2a2c306fc7225cca1c34
+删除文件
+删除文件成功
+测试文本消息
+POST /users/upfile 200 7.743 ms - 12
+/Users/bigbird/www/web/textweb/textNode/service/uploads/upload_bb412faeb648b341ec21e71fd2c775c1
+删除文件
+删除文件成功
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+测试文本消息
+POST /users/upfile 200 104.701 ms - 12
+删除文件成功
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+测试文本消息
+INSERT INTO text_main (id, text_main) VALUES ("1","这是修改数据22222") ON DUPLICATE KEY UPDATE text_main ="这是修改数据22222";
+POST /users/upfile 200 103.208 ms - 12
+删除文件成功
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+INSERT INTO text_main (id, text_main) VALUES ("1","测试文本消息") ON DUPLICATE KEY UPDATE text_main ="测试文本消息";
+POST /users/upfile 200 99.939 ms - 12
+删除文件成功
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:17
+            var extname = path.extname(files.uploadFile.name);
+                                                        ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:17:57
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at MultipartParser.parser.onEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:426:10)
+    at callback (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:102:31)
+    at MultipartParser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:268:15)
+    at IncomingForm.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:159:34)
+    at IncomingMessage.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:125:12)
+    at IncomingMessage.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+INSERT INTO text_main (id, text_main) VALUES ("1","测试文本消息") ON DUPLICATE KEY UPDATE text_main ="测试文本消息";
+[ RowDataPacket { id: 1, text_main: '测试文本消息' } ]
+POST /users/upfile 200 107.930 ms - 43
+删除文件成功
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:17
+            var extname = path.extname(files.uploadFile.name);
+                                                        ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:17:57
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at MultipartParser.parser.onEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:426:10)
+    at callback (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:102:31)
+    at MultipartParser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:268:15)
+    at IncomingForm.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:159:34)
+    at IncomingMessage.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:125:12)
+    at IncomingMessage.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+INSERT INTO text_main (id, text_main) VALUES ("1","测试文本消息") ON DUPLICATE KEY UPDATE text_main ="测试文本消息";
+[ RowDataPacket { id: 1, text_main: '测试文本消息' } ]
+POST /users/upfile 200 89.112 ms - 43
+删除文件成功
+INSERT INTO text_main (id, text_main) VALUES ("1","测试文本消息") ON DUPLICATE KEY UPDATE text_main ="测试文本消息";
+[ RowDataPacket { id: 1, text_main: '测试文本消息' } ]
+POST /users/upfile 200 9.008 ms - 43
+删除文件成功
+INSERT INTO text_main (id, text_main) VALUES ("1","测试文本消息") ON DUPLICATE KEY UPDATE text_main ="测试文本消息";
+[ RowDataPacket { id: 1, text_main: '测试文本消息' } ]
+POST /users/upfile 200 7.541 ms - 43
+删除文件成功
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+POST /users/gettext 200 112.408 ms - 43
+POST /users/gettext 200 3.760 ms - 43
+POST /users/gettext 200 2.328 ms - 43
+POST /users/gettext 200 2.718 ms - 43
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+
+
+
+
+
+
+
+
+TCP 连接成功-----
+收到一条来自客户端的信息这是推送消息
+POST /users/gettext 200 4.617 ms - 43
+POST /users/gettext 200 3.080 ms - 43
+POST /users/gettext 200 2.723 ms - 43
+POST /users/gettext 200 3.080 ms - 43
+POST /users/gettext 200 2.488 ms - 43
+POST /users/gettext 200 2.577 ms - 43
+POST /users/gettext 200 3.268 ms - 43
+POST /users/gettext 200 2.593 ms - 43
+POST /users/gettext 200 2.660 ms - 43
+POST /users/gettext 200 2.663 ms - 43
+POST /users/gettext 200 2.237 ms - 43
+POST /users/gettext 200 2.451 ms - 43
+POST /users/gettext 200 2.861 ms - 43
+POST /users/gettext 200 4.214 ms - 43
+POST /users/gettext 200 2.723 ms - 43
+POST /users/gettext 200 4.247 ms - 43
+POST /users/gettext 200 3.855 ms - 43
+POST /users/gettext 200 3.261 ms - 43
+POST /users/gettext 200 3.204 ms - 43
+POST /users/gettext 200 2.969 ms - 43
+POST /users/gettext 200 3.204 ms - 43
+POST /users/gettext 200 2.958 ms - 43
+POST /users/gettext 200 2.772 ms - 43
+POST /users/gettext 200 2.395 ms - 43
+POST /users/gettext 200 3.038 ms - 43
+POST /users/gettext 200 2.915 ms - 43
+POST /users/gettext 200 3.239 ms - 43
+POST /users/gettext 200 2.872 ms - 43
+POST /users/login 200 4.445 ms - 12
+POST /users/gettext 200 4.492 ms - 43
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+POST /users/gettext 200 111.496 ms - 43
+POST /users/gettext 200 3.539 ms - 43
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+POST /users/login 200 76.675 ms - 12
+POST /users/login 200 6.943 ms - 65
+POST /users/gettext 200 3.691 ms - 43
+POST /users/gettext 200 2.440 ms - 43
+POST /users/gettext 200 2.966 ms - 43
+POST /users/gettext 200 2.356 ms - 43
+POST /users/login 200 5.015 ms - 65
+POST /users/gettext 200 2.830 ms - 43
+POST /users/login 200 9.919 ms - 12
+POST /users/login 200 4.547 ms - 12
+POST /users/login 200 5.644 ms - 65
+POST /users/gettext 200 2.356 ms - 43
+POST /users/login 200 5.067 ms - 65
+POST /users/gettext 200 2.901 ms - 43
+POST /users/gettext 200 3.899 ms - 43
+POST /users/login 200 5.339 ms - 65
+POST /users/gettext 200 3.107 ms - 43
+POST /users/gettext 200 5.009 ms - 43
+POST /users/gettext 200 2.758 ms - 43
+POST /users/gettext 200 2.979 ms - 43
+POST /users/gettext 200 3.659 ms - 43
+POST /users/gettext 200 2.558 ms - 43
+TCP 连接成功-----
+TCP 连接成功-----
+TCP 连接成功-----
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+TCP 连接成功-----
+TCP 连接成功-----
+TCP 连接成功-----
+POST /users/login 200 111.828 ms - 65
+TCP 连接成功-----
+INSERT INTO text_main (id, text_main) VALUES ("1","测试文本消息22222") ON DUPLICATE KEY UPDATE text_main ="测试文本消息22222";
+[ RowDataPacket { id: 1, text_main: '测试文本消息22222' } ]
+POST /users/upfile 200 17.725 ms - 48
+删除文件成功
+收到一条来自客户端的信息测试文本消息22222
+POST /users/gettext 200 3.634 ms - 48
+POST /users/login 200 9.659 ms - 70
+TCP 连接成功-----
+TCP 连接成功-----
+POST /users/gettext 200 4.728 ms - 48
+收到一条来自客户端的信息测试文本消息22222
+收到一条来自客户端的信息测试文本消息22222
+TCP 连接成功-----
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+TCP 连接成功-----
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+TCP 连接成功-----
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+收到一条来自客户端的信息
+TCP 连接成功-----
+收到一条来自客户端的信息
+POST /users/gettext 200 2.893 ms - 48
+TCP 连接成功-----
+TCP 连接成功-----
+POST /users/gettext 200 2.787 ms - 48
+POST /users/gettext 200 3.845 ms - 48
+^C
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET /admin 404 323.089 ms - 1205
+GET /favicon.ico 404 13.104 ms - 1205
+POST /users/gettext 200 101.163 ms - 48
+POST /users/gettext 200 4.687 ms - 48
+POST /users/gettext 200 2.926 ms - 48
+POST /users/gettext 200 3.937 ms - 48
+POST /users/gettext 200 2.326 ms - 48
+POST /users/adminlogin 200 5.384 ms - 12
+POST /users/adminlogin 200 2.796 ms - 12
+POST /users/adminlogin 200 3.185 ms - 12
+POST /users/gettext 200 3.559 ms - 48
+POST /users/login 200 6.479 ms - 70
+TCP 连接成功-----
+INSERT INTO text_main (id, text_main) VALUES ("1","阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis") ON DUPLICATE KEY UPDATE text_main ="阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis";
+[ RowDataPacket { id: 1, text_main: '阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis' } ]
+POST /users/upfile 200 16.806 ms - 88
+删除文件成功
+TCP 连接成功-----
+收到一条来自客户端的信息阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis
+POST /users/gettext 200 3.624 ms - 88
+POST /users/login 200 3.590 ms - 12
+POST /users/login 200 7.497 ms - 110
+TCP 连接成功-----
+POST /users/query_user_info 200 6.098 ms - 391
+POST /users/deldatalist 200 5.406 ms - 12
+POST /users/deldatalist 200 3.364 ms - 12
+POST /users/deldatalist 200 4.233 ms - 12
+POST /users/deldatalist 200 3.935 ms - 12
+POST /users/deldatalist 200 4.056 ms - 12
+POST /users/deldatalist 200 3.237 ms - 12
+POST /users/deldatalist 200 3.968 ms - 12
+POST /users/deldatalist 200 3.472 ms - 12
+POST /users/deldatalist 200 3.039 ms - 12
+POST /users/deldatalist 200 4.685 ms - 12
+POST /users/query_user_info 200 5.394 ms - 61
+POST /users/deldatalist 200 3.557 ms - 12
+POST /users/gettext 200 3.430 ms - 2
+POST /users/adminlogin 200 2.519 ms - 12
+POST /users/query_user_info 200 4.648 ms - 21
+[]
+POST /users/adduser 200 6.097 ms - 12
+POST /users/query_user_info 200 4.476 ms - 66
+POST /users/login 200 5.595 ms - 12
+POST /users/login 200 5.645 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ '13438660582', '123456' ]
+POST /users/login 200 76.048 ms - 12
+^[[A^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+POST /users/login 200 76.398 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+[]
+POST /users/login 200 76.947 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+[]
+false
+POST /users/login 200 78.808 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+[]
+POST /users/login 200 76.659 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+true
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+登录成功
+[]
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+登录成功
+[]
+POST /users/login 200 76.407 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+登录成功
+true
+登录成功---rout
+POST /users/login 200 79.198 ms - 26
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+POST /users/gettext 200 69.955 ms - 2
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+登录成功
+{ status: true, data: [] }
+登录成功---rout
+POST /users/login 200 13.908 ms - 47
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+POST /users/gettext 200 71.070 ms - 2
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+登录成功
+{ status: true, data: [] }
+POST /users/login 200 12.569 ms - 24
+INSERT INTO text_main (id, text_main) VALUES ("1","阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis") ON DUPLICATE KEY UPDATE text_main ="阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis";
+[ RowDataPacket { id: 1, text_main: '阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis' } ]
+POST /users/upfile 200 11.928 ms - 88
+删除文件成功
+TCP 连接成功-----
+收到一条来自客户端的信息阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis
+POST /users/gettext 200 3.597 ms - 88
+[ '13438660582', '123456' ]
+[ RowDataPacket { id: 14, user: '13438660582', pwd: '123456' } ]
+登录成功
+{ status: true,
+  data:
+   [ RowDataPacket { id: 1, text_main: '阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakis' } ] }
+POST /users/login 200 6.412 ms - 110
+TCP 连接成功-----
+INSERT INTO text_main (id, text_main) VALUES ("1","阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakisffffff") ON DUPLICATE KEY UPDATE text_main ="阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakisffffff";
+[ RowDataPacket { id: 1, text_main: '阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakisffffff' } ]
+POST /users/upfile 200 7.521 ms - 94
+删除文件成功
+收到一条来自客户端的信息阿斯顿看见阿三开打是打了卡圣诞快乐阿三khakisffffff
+POST /users/query_user_info 200 6.128 ms - 66
+POST /users/gettext 200 3.474 ms - 94
+POST /users/adminlogin 200 2.734 ms - 12
+POST /users/adminlogin 200 3.145 ms - 12
+POST /users/query_user_info 200 4.816 ms - 66
+[]
+POST /users/adduser 200 5.466 ms - 12
+POST /users/query_user_info 200 4.479 ms - 105
+POST /users/gettext 200 10.184 ms - 94
+POST /users/gettext 200 5.377 ms - 94
+POST /users/query_user_info 200 5.311 ms - 105
+POST /users/query_user_info 200 5.556 ms - 105
+POST /users/adminlogin 200 2.407 ms - 12
+POST /users/query_user_info 200 6.321 ms - 105
+[]
+POST /users/adduser 200 4.958 ms - 12
+POST /users/query_user_info 200 4.636 ms - 143
+INSERT INTO text_main (id, text_main) VALUES ("1","这是测试文本xxxxxxxx") ON DUPLICATE KEY UPDATE text_main ="这是测试文本xxxxxxxx";
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxx' } ]
+POST /users/upfile 200 8.404 ms - 51
+删除文件成功
+TCP 连接成功-----
+收到一条来自客户端的信息这是测试文本xxxxxxxx
+[ 'qw123', '1234' ]
+[ RowDataPacket { id: 16, user: 'qw123', pwd: '1234' } ]
+登录成功
+{ status: true,
+  data: [ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxx' } ] }
+POST /users/login 200 6.408 ms - 73
+TCP 连接成功-----
+INSERT INTO text_main (id, text_main) VALUES ("1","这是测试文本xxxxxxxxjjjjjjjj") ON DUPLICATE KEY UPDATE text_main ="这是测试文本xxxxxxxxjjjjjjjj";
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/upfile 200 7.465 ms - 59
+删除文件成功
+收到一条来自客户端的信息这是测试文本xxxxxxxxjjjjjjjj
+POST /users/gettext 200 3.648 ms - 59
+POST /users/gettext 200 2.962 ms - 59
+POST /users/gettext 200 3.361 ms - 59
+POST /users/gettext 200 3.578 ms - 59
+POST /users/gettext 200 4.982 ms - 59
+POST /users/gettext 200 3.487 ms - 59
+POST /users/gettext 200 3.535 ms - 59
+POST /users/gettext 200 2.668 ms - 59
+POST /users/gettext 200 3.601 ms - 59
+POST /users/gettext 200 3.861 ms - 59
+POST /users/gettext 200 2.333 ms - 59
+POST /users/gettext 200 4.114 ms - 59
+POST /users/gettext 200 3.676 ms - 59
+POST /users/gettext 200 2.373 ms - 59
+POST /users/gettext 200 2.931 ms - 59
+POST /users/gettext 200 3.144 ms - 59
+POST /users/gettext 200 3.393 ms - 59
+POST /users/gettext 200 2.442 ms - 59
+POST /users/gettext 200 3.414 ms - 59
+POST /users/gettext 200 4.127 ms - 59
+POST /users/gettext 200 3.460 ms - 59
+POST /users/gettext 200 2.777 ms - 59
+POST /users/gettext 200 6.510 ms - 59
+POST /users/gettext 200 2.505 ms - 59
+POST /users/gettext 200 3.329 ms - 59
+POST /users/gettext 200 2.766 ms - 59
+POST /users/gettext 200 4.060 ms - 59
+POST /users/gettext 200 3.126 ms - 59
+POST /users/gettext 200 2.498 ms - 59
+POST /users/gettext 200 3.292 ms - 59
+POST /users/gettext 200 2.812 ms - 59
+POST /users/gettext 200 3.323 ms - 59
+POST /users/gettext 200 13.639 ms - 59
+POST /users/gettext 200 3.429 ms - 59
+POST /users/gettext 200 2.871 ms - 59
+POST /users/gettext 200 3.445 ms - 59
+POST /users/gettext 200 2.997 ms - 59
+POST /users/gettext 200 3.397 ms - 59
+POST /users/gettext 200 2.969 ms - 59
+POST /users/gettext 200 3.655 ms - 59
+POST /users/gettext 200 2.966 ms - 59
+POST /users/gettext 200 2.663 ms - 59
+POST /users/gettext 200 3.061 ms - 59
+POST /users/gettext 200 3.537 ms - 59
+POST /users/gettext 200 2.593 ms - 59
+POST /users/gettext 200 3.672 ms - 59
+POST /users/gettext 200 2.601 ms - 59
+POST /users/gettext 200 2.829 ms - 59
+POST /users/gettext 200 3.419 ms - 59
+POST /users/gettext 200 3.343 ms - 59
+POST /users/gettext 200 3.787 ms - 59
+POST /users/gettext 200 3.144 ms - 59
+POST /users/gettext 200 3.539 ms - 59
+POST /users/gettext 200 2.569 ms - 59
+POST /users/gettext 200 3.309 ms - 59
+POST /users/gettext 200 2.518 ms - 59
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+POST /users/gettext 200 112.450 ms - 59
+POST /users/gettext 200 6.251 ms - 59
+POST /users/gettext 200 4.823 ms - 59
+POST /users/gettext 200 4.898 ms - 59
+POST /users/gettext 200 4.236 ms - 59
+POST /users/gettext 200 3.276 ms - 59
+[]
+{ status: false }
+POST /users/login 200 6.022 ms - 12
+[]
+{ status: false }
+POST /users/login 200 3.456 ms - 12
+[ RowDataPacket {
+    id: 16,
+    user: 'qw123',
+    pwd: '1234',
+    offline_time: null,
+    login_time: null,
+    pc_ip: null } ]
+{ status: true,
+  data:
+   [ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ] }
+POST /users/login 200 6.499 ms - 81
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket {
+    id: 16,
+    user: 'qw123',
+    pwd: '1234',
+    offline_time: null,
+    login_time: null,
+    pc_ip: null } ]
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: Cannot read property 'id' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/userService.js:11:40
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:9:13
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket {
+    id: 16,
+    user: 'qw123',
+    pwd: '1234',
+    offline_time: null,
+    login_time: null,
+    pc_ip: null } ]
+undefined
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: Cannot read property 'id' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/userService.js:12:40
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:9:13
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket {
+    id: 16,
+    user: 'qw123',
+    pwd: '1234',
+    offline_time: null,
+    login_time: null,
+    pc_ip: null } ]
+登录成功后-获取id
+undefined
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: Cannot read property 'id' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/userService.js:13:40
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:9:13
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+
+8080....OK
+
+
+
+
+
+[ RowDataPacket {
+    id: 16,
+    user: 'qw123',
+    pwd: '1234',
+    offline_time: null,
+    login_time: null,
+    pc_ip: null } ]
+登录成功后-获取id
+true
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: Cannot read property 'id' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/userService.js:13:40
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:9:13
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+{ status: false }
+POST /users/login 200 116.344 ms - 12
+^C
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+{ status: false }
+POST /users/login 200 78.048 ms - 12
+^?^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 124.583 ms - 12
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: callback is not a function
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:20:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket {
+    id: 16,
+    user: 'qw123',
+    pwd: '1234',
+    offline_time: null,
+    login_time: '223.85.154.130',
+    pc_ip: '2019-01-14 18:07:25' } ]
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ '223.85.154.130', '2019-01-14 18:10:42', 16 ]
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+登录成功-增加信息
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+登录成功-增加信息
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 86.605 ms - 12
+登录成功-增加信息
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 85.685 ms - 12
+登录成功-增加信息
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 87.821 ms - 12
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 7.723 ms - 12
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 7.762 ms - 12
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 6.735 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+登录成功--然后获取到的数据为
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/login 200 85.584 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+登录成功--然后获取到的数据为
+{ status: true,
+  data:
+   [ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ] }
+POST /users/login 200 87.170 ms - 81
+POST /users/gettext 200 4.350 ms - 59
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+登录成功--然后获取到的数据为
+{ status: false }
+POST /users/login 200 114.860 ms - 12
+登录成功--然后获取到的数据为
+{ status: true,
+  data:
+   [ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ] }
+POST /users/login 200 15.893 ms - 81
+TCP 连接成功-----
+POST /users/gettext 200 3.885 ms - 59
+POST /users/gettext 200 3.736 ms - 59
+POST /users/gettext 200 4.016 ms - 59
+登录成功--然后获取到的数据为
+{ status: false }
+POST /users/login 200 3.196 ms - 12
+登录成功--然后获取到的数据为
+{ status: true,
+  data:
+   [ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ] }
+POST /users/login 200 10.926 ms - 81
+TCP 连接成功-----
+POST /users/gettext 200 3.798 ms - 59
+登录成功--然后获取到的数据为
+{ status: false }
+POST /users/login 200 2.641 ms - 12
+登录成功--然后获取到的数据为
+{ status: false }
+POST /users/login 200 4.594 ms - 12
+登录成功--然后获取到的数据为
+{ status: true,
+  data:
+   [ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ] }
+POST /users/login 200 9.428 ms - 81
+TCP 连接成功-----
+POST /users/gettext 200 4.712 ms - 59
+POST /users/query_user_info 200 5.985 ms - 354
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+TCP 连接成功-----
+
+
+
+TCP 连接成功-----
+TCP 连接成功-----
+POST /users/login 200 108.471 ms - 91
+TCP 连接成功-----
+POST /users/outlogin 200 5.209 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+POST /users/login 200 119.356 ms - 91
+TCP 连接成功-----
+POST /users/outlogin 200 4.117 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+POST /users/login 200 120.076 ms - 91
+TCP 连接成功-----
+[ '15', '2019-01-14 18:53:24' ]
+POST /users/outlogin 200 7.266 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+TCP 连接成功-----
+
+
+
+
+[ '2019-01-14 18:54:15', '15' ]
+POST /users/outlogin 200 110.387 ms - 4
+POST /users/query_user_info 200 10.052 ms - 371
+POST /users/query_user_info 200 5.135 ms - 371
+POST /users/query_user_info 200 5.297 ms - 371
+POST /users/query_user_info 200 6.327 ms - 371
+POST /users/query_user_info 200 5.160 ms - 371
+TCP 连接成功-----
+TCP 连接成功-----
+TCP 连接成功-----
+TCP 连接成功-----
+TCP 连接成功-----
+
+
+
+
+
+
+^C
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+POST /users/query_user_info 200 132.919 ms - 371
+POST /users/login 200 4.674 ms - 12
+POST /users/login 200 11.453 ms - 91
+TCP 连接成功-----
+
+
+POST /users/login 200 9.632 ms - 91
+TCP 连接成功-----
+POST /users/login 200 5.509 ms - 12
+POST /users/login 200 10.132 ms - 91
+TCP 连接成功-----
+[ '2019-01-14 19:21:55', '15' ]
+POST /users/outlogin 200 7.714 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+POST /users/login 200 82.855 ms - 91
+TCP 连接成功-----
+用户断开链接15
+/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:17
+            _io.socket.close();
+                       ^
+
+TypeError: Cannot read property 'close' of undefined
+    at Socket.<anonymous> (/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:17:24)
+    at Socket.emit (events.js:182:13)
+    at /Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:528:12
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+POST /users/login 200 86.820 ms - 91
+TCP 连接成功-----
+用户断开链接15
+[ '2019-01-14 19:26:12', undefined ]
+POST /users/outlogin 200 6.007 ms - 4
+[]
+POST /users/adduser 200 5.090 ms - 12
+POST /users/query_user_info 200 5.082 ms - 506
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+ReferenceError: consoe is not defined
+    at /Users/bigbird/www/web/textweb/textNode/service/userService.js:14:17
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:123:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.EofPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:123:8)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+[ RowDataPacket { state: '0' } ]
+POST /users/login - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+POST /users/login 200 120.920 ms - 22
+POST /users/login 200 4.289 ms - 12
+[ RowDataPacket { state: '1' } ]
+POST /users/login 200 7.117 ms - 22
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+POST /users/login 200 116.266 ms - 22
+[ RowDataPacket { state: '0' } ]
+POST /users/login 200 5.702 ms - 22
+[ RowDataPacket { state: '0' } ]
+POST /users/login 200 5.634 ms - 22
+[ RowDataPacket { state: '0' } ]
+POST /users/login 200 5.248 ms - 22
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '0' } ]
+{ state: '1' }
+POST /users/login 200 85.234 ms - 13
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '0' } ]
+已经在其他地方登录了
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login - - ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 90.930 ms - 90
+POST /users/query_user_info 200 11.007 ms - 506
+POST /users/login 200 3.789 ms - 11
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.824 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 10.961 ms - 90
+TCP 连接成功-----
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.502 ms - 11
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+POST /users/login 200 112.944 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+服务器出错：Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?  WHERE id=?' at line 1
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 89.678 ms - 90
+TCP 连接成功-----
+
+
+
+
+POST /users/login 200 4.045 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 12.758 ms - 90
+TCP 连接成功-----
+用户断开链接15
+[ '2019-01-14 20:26:56', '15' ]
+服务器出错：Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+POST /users/outlogin 200 5.678 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ '2019-01-14 20:29:12', '15' ]
+POST /users/outlogin 200 113.326 ms - 4
+[ '2019-01-14 20:30:43', '15' ]
+POST /users/outlogin 200 5.393 ms - 4
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 8.271 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+[ '1', '15' ]
+POST /users/login 200 11.634 ms - 90
+TCP 连接成功-----
+
+
+
+
+
+
+用户断开链接15
+15
+[ '2019-01-14 20:31:12', '15' ]
+服务器出错：Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1
+POST /users/outlogin 200 4.616 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 126.910 ms - 90
+TCP 连接成功-----
+用户断开链接15
+[ '2019-01-14 20:33:50', '15' ]
+POST /users/outlogin 200 6.575 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 91.570 ms - 90
+TCP 连接成功-----
+
+
+
+
+用户断开链接15
+[ '2019-01-14 20:35:15', '15' ]
+POST /users/outlogin 200 5.070 ms - 4
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 132.378 ms - 90
+TCP 连接成功-----
+
+
+
+
+用户断开链接2iiiiii
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 84.418 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 13.696 ms - 90
+TCP 连接成功-----
+transport close
+用户断开链接2iiiiii
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+POST /users/query_user_info 200 113.356 ms - 506
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 115.772 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 14.022 ms - 90
+TCP 连接成功-----
+
+
+
+
+transport close
+用户断开链接2iiiiii
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 122.843 ms - 90
+TCP 连接成功-----
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 6.308 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 10.899 ms - 90
+TCP 连接成功-----
+用户断开链接15
+[ '2019-01-14 20:56:40', '15' ]
+POST /users/outlogin 200 6.287 ms - 4
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 12.331 ms - 90
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.201 ms - 90
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 12.514 ms - 90
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+TCP 连接成功-----
+
+
+
+用户断开链接15
+[ '2019-01-14 20:59:38', '15' ]
+POST /users/outlogin 200 30.232 ms - 4
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 13.892 ms - 90
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.577 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.846 ms - 90
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+TCP 连接成功-----
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 114.083 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.946 ms - 90
+TCP 连接成功-----
+用户断开链接15
+[ '2019-01-14 21:02:42', '15' ]
+POST /users/outlogin 200 5.383 ms - 4
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.323 ms - 90
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+TCP 连接成功-----
+
+
+
+
+
+用户断开链接15
+[ '2019-01-14 21:03:40', '15' ]
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: socket.close is not a function
+    at /Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:21:24
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:115:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 90.776 ms - 90
+TCP 连接成功-----
+
+
+
+
+用户断开链接15
+[ '2019-01-14 21:04:12', '15' ]
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: socket.close is not a function
+    at /Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:21:24
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:115:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+TCP 连接成功-----
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 86.964 ms - 90
+TCP 连接成功-----
+[ '2019-01-14 21:06:43', '15' ]
+POST /users/outlogin 200 4.668 ms - 4
+POST /users/login 200 3.980 ms - 11
+POST /users/login 200 3.830 ms - 11
+POST /users/login 200 3.913 ms - 11
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.706 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 19.285 ms - 90
+TCP 连接成功-----
+用户断开链接15
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: socket.close is not a function
+    at /Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:21:24
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:115:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 128.144 ms - 90
+TCP 连接成功-----
+用户断开链接15
+/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:80
+        throw err; // Rethrow non-MySQL errors
+        ^
+
+TypeError: socket.close is not a function
+    at /Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:21:24
+    at /Users/bigbird/www/web/textweb/textNode/dao/UserDao.js:115:9
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/dao/database.js:28:13)
+    at Query.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:502:10)
+    at Query._callback (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/Connection.js:468:16)
+    at Query.Sequence.end (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Query._handleFinalResultPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:139:8)
+    at Query.OkPacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/sequences/Query.js:72:10)
+    at Protocol._parsePacket (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/mysql/lib/protocol/Parser.js:76:12)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 124.197 ms - 90
+TCP 连接成功-----
+用户断开链接15
+POST /users/login 200 4.154 ms - 11
+POST /users/login 200 3.470 ms - 11
+POST /users/login 200 3.524 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 19.656 ms - 90
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 82.547 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.873 ms - 90
+TCP 连接成功-----
+用户断开链接15
+undefined
+用户断开链接2iiiiii
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 12.832 ms - 90
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.821 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 10.341 ms - 90
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.236 ms - 90
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.923 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 10.706 ms - 90
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+TCP 连接成功-----
+用户断开链接15
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+TCP 连接成功-----
+用户断开链接15
+用户断开链接15
+用户断开链接15
+用户断开链接15
+用户断开链接15
+用户断开链接15
+用户断开链接15
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 34.333 ms - 90
+TCP 连接成功-----
+
+
+
+
+用户断开链接15
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 13.234 ms - 90
+TCP 连接成功-----
+用户断开链接15
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 130.925 ms - 90
+TCP 连接成功-----
+用户断开链接15
+[ '2019-01-14 21:49:00', '15' ]
+POST /users/outlogin 200 4.242 ms - 4
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.587 ms - 90
+TCP 连接成功-----
+
+
+
+
+
+
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 120.071 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 13.654 ms - 90
+TCP 连接成功-----
+
+
+
+用户断开链接15
+[ '2019-01-14 21:52:34', '15' ]
+POST /users/outlogin 200 4.477 ms - 4
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 19.634 ms - 90
+TCP 连接成功-----
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 14.098 ms - 90
+TCP 连接成功-----
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 130.897 ms - 90
+TCP 连接成功-----
+
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 89.158 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 15.700 ms - 90
+TCP 连接成功-----
+
+
+
+
+断开链接disconnect
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 128.457 ms - 90
+TCP 连接成功-----
+断开链接disconnect
+disconnect: mOnIUhJrWRi13R4xAAAA
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 6.631 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 12.778 ms - 90
+TCP 连接成功-----
+c^[[A^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+TCP 连接成功-----id为81TcEP444FaM7vaGAAAA
+用户断开链接15
+断开链接disconnect
+disconnect: 81TcEP444FaM7vaGAAAA
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 34.782 ms - 90
+TCP 连接成功-----id为C6C4OdT3v3kGr2ykAAAB
+断开链接disconnect
+disconnect: C6C4OdT3v3kGr2ykAAAB
+TCP 连接成功-----id为u0u0ghpy9oiywJymAAAC
+用户断开链接15
+断开链接disconnect
+disconnect: u0u0ghpy9oiywJymAAAC
+POST /users/query_user_info 200 9.612 ms - 506
+POST /users/query_user_info 200 6.623 ms - 506
+POST /users/query_user_info 200 4.832 ms - 506
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 17.295 ms - 90
+TCP 连接成功-----id为7U_epu1w9egt8sneAAAD
+用户断开链接15
+[ '2019-01-14 22:17:40', '15' ]
+POST /users/outlogin 200 3.133 ms - 4
+断开链接disconnect
+disconnect: 7U_epu1w9egt8sneAAAD
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 12.284 ms - 90
+TCP 连接成功-----id为mMtAMoU4YCLWsn6wAAAE
+断开链接disconnect
+disconnect: mMtAMoU4YCLWsn6wAAAE
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 6.956 ms - 11
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 6.295 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.376 ms - 90
+TCP 连接成功-----id为JFl_nG_FlP5gtnj2AAAF
+用户断开链接15
+[ '2019-01-14 22:19:21', '15' ]
+POST /users/outlogin 200 3.136 ms - 4
+断开链接disconnect
+disconnect: JFl_nG_FlP5gtnj2AAAF
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 124.769 ms - 90
+TCP 连接成功-----id为M7jGFVox22XYtBFAAAAA
+
+
+
+
+
+
+
+用户断开链接15
+[ '2019-01-14 22:19:46', '15' ]
+POST /users/outlogin 200 3.928 ms - 4
+断开链接disconnect
+disconnect: [object Object]
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 123.434 ms - 90
+TCP 连接成功-----id为0fzvKhW6e_BrWE36AAAA
+用户断开链接15
+[ '2019-01-14 22:21:04', '15' ]
+POST /users/outlogin 200 4.236 ms - 4
+断开链接disconnect
+/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:32
+            console.log('disconnect: ' + JSON.stringify(socket)); 
+                                              ^
+
+TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Socket.<anonymous> (/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:32:47)
+    at Socket.emit (events.js:182:13)
+    at Socket.emit (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:142:10)
+    at Socket.onclose (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:454:8)
+    at Client.onclose (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/client.js:254:24)
+    at Socket.emit (events.js:187:15)
+    at Socket.onClose (/Users/bigbird/www/web/textweb/textNode/node_modules/engine.io/lib/socket.js:318:10)
+    at Object.onceWrapper (events.js:273:13)
+    at WebSocket.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 93.260 ms - 90
+TCP 连接成功-----id为xxwUSQmth4bkltLmAAAA
+用户断开链接15
+[ '2019-01-14 22:22:06', '15' ]
+POST /users/outlogin 200 4.003 ms - 4
+断开链接disconnect
+/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:31
+            console.log(JSON.stringify(socket));
+                             ^
+
+TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Socket.<anonymous> (/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:31:30)
+    at Socket.emit (events.js:182:13)
+    at Socket.emit (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:142:10)
+    at Socket.onclose (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:454:8)
+    at Client.onclose (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/client.js:254:24)
+    at Socket.emit (events.js:187:15)
+    at Socket.onClose (/Users/bigbird/www/web/textweb/textNode/node_modules/engine.io/lib/socket.js:318:10)
+    at Object.onceWrapper (events.js:273:13)
+    at WebSocket.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+执行了
+POST /users/editlogindan - - ms - -
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 22.704 ms - 90
+TCP 连接成功-----id为1KZPCTD6OxnvmPR4AAAA
+执行了
+POST /users/editlogindan 200 3.486 ms - 168
+断开链接disconnect
+/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:31
+            console.log(JSON.stringify(socket));
+                             ^
+
+TypeError: Converting circular structure to JSON
+    at JSON.stringify (<anonymous>)
+    at Socket.<anonymous> (/Users/bigbird/www/web/textweb/textNode/service/tcpServer.js:31:30)
+    at Socket.emit (events.js:182:13)
+    at Socket.emit (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:142:10)
+    at Socket.onclose (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/socket.js:454:8)
+    at Client.onclose (/Users/bigbird/www/web/textweb/textNode/node_modules/socket.io/lib/client.js:254:24)
+    at Socket.emit (events.js:187:15)
+    at Socket.onClose (/Users/bigbird/www/web/textweb/textNode/node_modules/engine.io/lib/socket.js:318:10)
+    at Object.onceWrapper (events.js:273:13)
+    at WebSocket.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 90.549 ms - 90
+TCP 连接成功-----id为euiPyUaX5YgpbOBrAAAA
+执行了
+POST /users/editlogindan 200 5.550 ms - 168
+disconnect: 
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.864 ms - 90
+TCP 连接成功-----id为vwHcDLsnu0QlNGs0AAAB
+执行了
+POST /users/editlogindan 200 3.581 ms - 168
+disconnect: 
+执行了
+POST /users/editlogindan 200 2.645 ms - 168
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.665 ms - 90
+TCP 连接成功-----id为-5UXtxkfCdJbE2l3AAAC
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 6.057 ms - 11
+执行了
+POST /users/editlogindan 200 2.892 ms - 168
+disconnect: 
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 4.888 ms - 11
+执行了
+POST /users/editlogindan 200 3.192 ms - 168
+执行了
+POST /users/editlogindan 200 2.556 ms - 168
+执行了
+POST /users/editlogindan 200 3.467 ms - 168
+执行了
+POST /users/editlogindan 200 2.817 ms - 168
+执行了
+POST /users/editlogindan 200 3.439 ms - 168
+执行了
+POST /users/editlogindan 200 3.567 ms - 168
+执行了
+POST /users/editlogindan 200 3.077 ms - 168
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.712 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.502 ms - 90
+TCP 连接成功-----id为VEH32oXWhogP6ORxAAAD
+
+
+
+
+
+disconnect: 
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 129.444 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 15.231 ms - 90
+TCP 连接成功-----id为WpW6MKyheErehbZ1AAAA
+disconnect: 改变
+执行了
+POST /users/editlogindan 200 4.455 ms - 168
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 19.583 ms - 90
+TCP 连接成功-----id为FBpnt_siKVakKtCcAAAB
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 8.253 ms - 11
+disconnect: 改变
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 15.002 ms - 90
+TCP 连接成功-----id为8ux8LMLciadbQK-1AAAC
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+TCP 连接成功-----id为6RsHhsW1qvGmcEHEAAAA
+用户断开链接15
+
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 37.827 ms - 90
+TCP 连接成功-----id为hDXWf90GCnKuHOtiAAAB
+[ 'hDXWf90GCnKuHOtiAAAB', '15' ]
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+TCP 连接成功-----id为U8QMfQ5ij5VQtcaFAAAA
+用户断开链接15
+TCP 连接成功-----id为ZguEA18__LtQUYUFAAAB
+用户断开链接15
+
+
+
+
+
+
+用户断开链接15
+[ '2019-01-15 00:03:07', '15' ]
+POST /users/outlogin 200 24.600 ms - 4
+transport close
+disconnect: 改变
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 14.812 ms - 90
+TCP 连接成功-----id为ZrWCb6ZwudqzRIWyAAAC
+[ 'ZrWCb6ZwudqzRIWyAAAC', '15' ]
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 6.196 ms - 11
+transport close
+disconnect: 改变
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.366 ms - 90
+TCP 连接成功-----id为kzrQuSooqNxumLgOAAAD
+[ 'kzrQuSooqNxumLgOAAAD', '15' ]
+transport close
+disconnect: 改变
+POST /users/query_user_info 200 6.053 ms - 576
+POST /users/query_user_info 200 4.800 ms - 576
+POST /users/deldatalist 200 4.752 ms - 12
+POST /users/deldatalist 200 3.634 ms - 12
+POST /users/deldatalist 200 3.450 ms - 12
+POST /users/deldatalist 200 3.550 ms - 12
+transport close
+disconnect: 改变
+POST /users/adminlogin 200 3.735 ms - 12
+POST /users/adminlogin 200 4.660 ms - 12
+POST /users/query_user_info 200 5.480 ms - 21
+[]
+POST /users/adduser 200 7.624 ms - 12
+POST /users/query_user_info 200 4.380 ms - 134
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjj' } ]
+POST /users/upfile 200 12.836 ms - 59
+删除文件成功
+TCP 连接成功-----id为m9bAnIz3lO2ZRPcFAAAE
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 14.857 ms - 90
+TCP 连接成功-----id为IGrTDnjWCFR2WHrSAAAF
+[ 'IGrTDnjWCFR2WHrSAAAF', '18' ]
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjjhnvhnvn' } ]
+POST /users/upfile 200 7.978 ms - 66
+删除文件成功
+收到一条来自客户端的信息这是测试文本xxxxxxxxjjjjjjjjhnvhnvn
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.289 ms - 11
+transport close
+disconnect: 改变
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.033 ms - 97
+TCP 连接成功-----id为8JLheT0eI2x_Ep7iAAAG
+[ '8JLheT0eI2x_Ep7iAAAG', '18' ]
+ping timeout
+disconnect: 改变
+ping timeout
+disconnect: 改变
+POST /users/adminlogin 200 2.894 ms - 12
+POST /users/query_user_info 200 5.291 ms - 182
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 130.159 ms - 97
+TCP 连接成功-----id为5lj2NFK_XndQaeLrAAAA
+[ '5lj2NFK_XndQaeLrAAAA', '18' ]
+[ '0', '2019-01-15 13:32:38', '5lj2NFK_XndQaeLrAAAA' ]
+disconnect: 改变
+POST /users/adminlogin 200 3.454 ms - 12
+POST /users/query_user_info 200 5.876 ms - 199
+GET / 200 346.734 ms - 170
+GET /stylesheets/style.css 404 12.502 ms - 1205
+GET /index.html 404 12.994 ms - 1205
+GET /index.html 404 18.130 ms - 1205
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 500 296.643 ms - 1351
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+express deprecated res.sendfile: Use res.sendFile instead routes/index.js:6:6
+GET / 200 9.040 ms - 1277
+GET / 304 1.917 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+express deprecated res.sendfile: Use res.sendFile instead routes/index.js:6:6
+GET / 304 7.834 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+GET / 500 297.623 ms - 1351
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+express deprecated res.sendfile: Use res.sendFile instead routes/index.js:6:6
+GET / 200 8.255 ms - 1277
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+
+
+
+
+
+express deprecated res.sendfile: Use res.sendFile instead routes/index.js:6:6
+GET / 304 7.540 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 200 6.865 ms - 92
+GET /favicon.ico 404 278.499 ms - 1205
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+GET / 304 5.084 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 4.871 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 5.182 ms - -
+GET / 304 0.593 ms - -
+^C
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			归档.zip
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET /index.html 200 6.494 ms - 92
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET /index.html 304 4.701 ms - -
+^C
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			归档.zip
+node_modules		routes
+sc:textNode bigbird$ cd ..
+sc:textweb bigbird$ cd ..
+sc:web bigbird$ ls
+dh3		muchang		skip		xuesheng
+dianshang	my-project	textweb		登录页面
+jQueryMagnifier	picquery	textweb12.sql
+sc:web bigbird$ cd ..
+sc:www bigbird$ ls
+electron-api-demos-Zh_CN-master	web
+gy				学生项目
+picquery
+sc:www bigbird$ cd ..
+sc:~ bigbird$ di
+-bash: di: command not found
+sc:~ bigbird$ dir
+-bash: dir: command not found
+sc:~ bigbird$ cd www/
+sc:www bigbird$ ls
+electron-api-demos-Zh_CN-master	web
+gy				学生项目
+picquery
+sc:www bigbird$ cd ..
+sc:~ bigbird$ ls
+234					java_error_in_webstorm.hprof
+960.js					myapp
+960.tmx					myproject
+AndroidStudioProjects			ngAdmin
+Applications				node
+Desktop					python
+Documents				qywxwork
+Downloads				ruff
+ES6-typeScript				sanguosha
+Library					svn
+Movies					testvirtual
+Music					textios
+Pictures				vue
+Public					vue-layui
+WebDriverAgent				web
+WebstormProjects			www
+angularjs				wxdemo
+dva-quickstart				开发笔记
+egg-example				桌面应用
+game					企业微信截图_15166750179730.png
+sc:~ bigbird$ cd node/
+sc:node bigbird$ ls
+nodeService	svntest
+sc:node bigbird$ cd nodeService/
+sc:nodeService bigbird$ ls
+app - 副本.js		node_modules		routes
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			web.config
+sc:nodeService bigbird$ node app.js
+8081....OK
+
+
+GET / 200 6.390 ms - 728
+^C
+sc:nodeService bigbird$ node app.js
+8081....OK
+GET / 304 4.301 ms - -
+^C
+sc:nodeService bigbird$ node app.js
+8081....OK
+菜单^C  
+sc:nodeService bigbird$ 
+sc:nodeService bigbird$ 
+sc:nodeService bigbird$ cd ..
+sc:node bigbird$ cd ..
+sc:~ bigbird$ ls
+234					java_error_in_webstorm.hprof
+960.js					myapp
+960.tmx					myproject
+AndroidStudioProjects			ngAdmin
+Applications				node
+Desktop					python
+Documents				qywxwork
+Downloads				ruff
+ES6-typeScript				sanguosha
+Library					svn
+Movies					testvirtual
+Music					textios
+Pictures				vue
+Public					vue-layui
+WebDriverAgent				web
+WebstormProjects			www
+angularjs				wxdemo
+dva-quickstart				开发笔记
+egg-example				桌面应用
+game					企业微信截图_15166750179730.png
+sc:~ bigbird$ cd web/
+sc:web bigbird$ ls
+chatvue		electronWeb	my-project	nodeWeb
+sc:web bigbird$ cd ..
+sc:~ bigbird$ cd www/
+sc:www bigbird$ ls
+electron-api-demos-Zh_CN-master	web
+gy				学生项目
+picquery
+sc:www bigbird$ cd web/
+sc:web bigbird$ ls
+dh3		muchang		skip		xuesheng
+dianshang	my-project	textweb		登录页面
+jQueryMagnifier	picquery	textweb12.sql
+sc:web bigbird$ cd textweb
+sc:textweb bigbird$ ls
+textNode	textvue
+sc:textweb bigbird$ cd text
+-bash: cd: text: No such file or directory
+sc:textweb bigbird$ ls
+textNode	textvue
+sc:textweb bigbird$ cd textNode/
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			归档.zip
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+GET / 304 4.939 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 5.121 ms - -
+GET / 304 0.657 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+GET / 304 5.294 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET / 304 6.508 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET / 304 5.751 ms - -
+GET /index.html 304 1.044 ms - -
+GET /index.htmladmin 404 297.022 ms - 1205
+GET /stylesheets/style.css 404 11.621 ms - 1205
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 5.539 ms - -
+GET /dist 301 1.642 ms - 167
+GET /dist/ 200 2.666 ms - 1277
+GET /dist/index.html 200 0.634 ms - 1277
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET / 200 6.617 ms - 430
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 4.876 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+^C
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ cd ..
+sc:textweb bigbird$ cd ..
+sc:web bigbird$ ls
+dh3		muchang		skip		xuesheng
+dianshang	my-project	textweb		登录页面
+jQueryMagnifier	picquery	textweb12.sql
+sc:web bigbird$ cd textweb
+sc:textweb bigbird$ ls
+textNode	textvue
+sc:textweb bigbird$ cd textNode/
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			归档.zip
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET / 304 6.061 ms - -
+GET / 304 0.619 ms - -
+GET / 304 0.384 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 6.169 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET / 304 4.663 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 304 5.841 ms - -
+GET / 304 0.537 ms - -
+GET / 304 0.524 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+http://localhost:3000
+GET / 304 6.943 ms - -
+/Users/bigbird/www/web/textweb/textNode/app.js:83
+        res.end(fs.readFileSync(__dirname + '/index.html'));
+                ^
+
+ReferenceError: fs is not defined
+    at Server.<anonymous> (/Users/bigbird/www/web/textweb/textNode/app.js:83:17)
+    at Server.emit (events.js:182:13)
+    at parserOnIncoming (_http_server.js:672:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+http://localhost:3000
+fs.js:115
+    throw err;
+    ^
+
+Error: ENOENT: no such file or directory, open '/Users/bigbird/www/web/textweb/textNode/index.html'
+    at Object.openSync (fs.js:436:3)
+    at Object.readFileSync (fs.js:341:35)
+    at Server.<anonymous> (/Users/bigbird/www/web/textweb/textNode/app.js:86:20)
+    at Server.emit (events.js:182:13)
+    at parserOnIncoming (_http_server.js:672:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+http://localhost:3000
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+http://localhost:3000
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+http://localhost:3000
+^C
+sc:textNode bigbird$ node app.js
+/Users/bigbird/www/web/textweb/textNode/app.js:71
+const http = require('http')
+      ^
+
+SyntaxError: Identifier 'http' has already been declared
+    at new Script (vm.js:79:7)
+    at createScript (vm.js:251:10)
+    at Object.runInThisContext (vm.js:303:10)
+    at Module._compile (internal/modules/cjs/loader.js:656:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+We cannot open "index.htm" file.
+We cannot open "index.htm" file.
+We cannot open "index.htm" file.
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+We cannot open "index.html" file.
+GET /sockjs-node/info?t=1547569754043 404 310.457 ms - 1205
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+
+
+GET /sockjs-node/info?t=1547570013031 404 310.400 ms - 1205
+^C
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			归档.zip
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+GET / 200 7.606 ms - 871
+GET / 304 1.126 ms - -
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+http://localhost:3000
+
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+/Users/bigbird/www/web/textweb/textNode/app.js:95
+}).listen(httpPort, () => {
+          ^
+
+ReferenceError: httpPort is not defined
+    at Object.<anonymous> (/Users/bigbird/www/web/textweb/textNode/app.js:95:11)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+
+
+We cannot open "index.html" file.
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+Server listening on: http://localhost: 3001
+
+GET / 200 6.095 ms - 783
+GET /css/app.e2713bb0.css 200 2.523 ms - 343
+GET /js/app.95060c55.js 200 2.561 ms - 4767
+GET /js/chunk-vendors.1c377c6f.js 200 2.002 ms - 81110
+^C
+sc:textNode bigbird$ ls
+app.js			package-lock.json	service
+bin			package.json		views
+dao			public			归档.zip
+node_modules		routes
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+
+GET / 404 346.530 ms - 1205
+POST /users/login 200 112.857 ms - 11
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 18.937 ms - 97
+[ '2019-01-16 01:19:35', '18' ]
+POST /users/outlogin 200 4.799 ms - 4
+[ RowDataPacket { state: '1' } ]
+已经在其他地方登录了
+POST /users/login 200 5.220 ms - 11
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 93.312 ms - 97
+TCP 连接成功-----id为VgIn410JDLVdOqPZAAAA
+disconnect: 改变
+[ RowDataPacket { state: '0' } ]
+没在其他地方登录
+POST /users/login 200 11.070 ms - 97
+TCP 连接成功-----id为969ecrxAFE2UW9snAAAB
+disconnect: 改变
+TCP 连接成功-----id为4RYdr1JMswtuxY67AAAC
+disconnect: 改变
+TCP 连接成功-----id为ZaOwLAAsae5RvfT4AAAD
+disconnect: 改变
+POST /users/adminlogin 200 3.732 ms - 12
+POST /users/adminlogin 200 3.070 ms - 12
+POST /users/adminlogin 200 3.287 ms - 12
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 404 341.186 ms - 1205
+POST /users/adminlogin 200 110.008 ms - 12
+POST /users/adminlogin 200 4.180 ms - 12
+POST /users/adminlogin 200 4.815 ms - 12
+POST /users/adminlogin 200 3.733 ms - 12
+POST /users/adminlogin 200 3.294 ms - 12
+[ RowDataPacket {
+
+删除文件成功
+POST /users/adminlogin 200 2.560 ms - 12
+POST /users/query_user_info 200 5.821 ms - 200
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:17
+            var extname = path.extname(files.uploadFile.name);
+                                                        ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:17:57
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at MultipartParser.parser.onEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:426:10)
+    at callback (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:102:31)
+    at MultipartParser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:268:15)
+    at IncomingForm.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:159:34)
+    at IncomingMessage.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:125:12)
+    at IncomingMessage.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+GET / 404 311.608 ms - 1205
+POST /users/adminlogin 200 104.124 ms - 12
+/Users/bigbird/www/web/textweb/textNode/service/fileService.js:17
+            var extname = path.extname(files.uploadFile.name);
+                                                        ^
+
+TypeError: Cannot read property 'name' of undefined
+    at /Users/bigbird/www/web/textweb/textNode/service/fileService.js:17:57
+    at IncomingForm.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:107:9)
+    at IncomingForm.emit (events.js:182:13)
+    at IncomingForm._maybeEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:557:8)
+    at MultipartParser.parser.onEnd (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:426:10)
+    at callback (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:102:31)
+    at MultipartParser.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/multipart_parser.js:268:15)
+    at IncomingForm.write (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:159:34)
+    at IncomingMessage.<anonymous> (/Users/bigbird/www/web/textweb/textNode/node_modules/formidable/lib/incoming_form.js:125:12)
+    at IncomingMessage.emit (events.js:182:13)
+sc:textNode bigbird$ 
+sc:textNode bigbird$ 
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+GET / 404 307.872 ms - 1205
+POST /users/adminlogin 200 107.111 ms - 12
+POST /users/adminlogin 200 5.996 ms - 12
+服务器出错：Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link ' at line 1
+POST /users/upfile - - ms - -
+[ RowDataPacket { id: 1, text_main: '这是测试文本xxxxxxxxjjjjjjjjhnvhnvn' } ]
+POST /users/upfile 200 10.416 ms - 66
+删除文件成功
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+^C
+sc:textNode bigbird$ node app.js
+启用TCP端口:8000
+8080....OK
+
+
+POST /users/adminlogin 200 118.340 ms - 12
+POST /users/adminlogin 200 5.005 ms - 12
+

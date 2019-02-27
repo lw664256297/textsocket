@@ -1,0 +1,37 @@
+﻿ Dim 赋值这次颜色(222)
+
+Sub 赋值各点上次颜色一次
+   // Dim 赋值上次颜色(165) : 赋值这次颜色(165)
+    dydx2 = xx2
+    dydy2 = yy2
+    v = 0
+    For hen = 0 To 26
+        If hen = 0 Then : henpx = 0 : End If : If hen = 1 Then : henpx = 9 : End If
+        If hen > 1 Then 
+            henzh  = hen - 2
+            If henzh  / 3 = int(henzh / 3) Then //被3整除      /偏移0.9.10.9.9.10.9.9.10.9.9.10
+                henpx = 10
+            Else 
+                henpx = 9
+            End If
+        End If
+        xx2 = xx2 + henpx
+        For shu = 1 To 6
+            v = v + 1
+            If shu = 1 Then : shupy = 0 : End If : If shu = 2 Then : shupy = 10 : End If : If shu = 3 Then : shupy = 9 : End If
+            If shu = 4 Then : shupy = 9 : End If : If shu = 5 Then : shupy = 10 : End If : If shu = 6 Then : shupy = 9 : End If 
+                
+            yy2 = yy2 + shupy//竖加偏移 向下移一格
+            MoveTo xx2, yy2
+            MessageBox "第"&v&"格"&xx2&","&yy2
+            赋值上次颜色(v) = dm.GetColor(xx2, yy2)
+            //MessageBox "赋值上次颜色"&赋值上次颜色(v)
+        Next
+        yy2 = dydy2   //*****纵坐标复位
+    Next
+    xx2 = dydx2  //*****横坐标复位 
+End Sub
+
+
+
+ 
